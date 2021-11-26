@@ -1,13 +1,147 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>José González (ZeegCL)</title>
-</head>
-<body>
-    <h1>Site under construction</h1>
-    <p>Honey, I promise to finish this one...</p>
-</body>
-</html>
+---
+
+layout: default
+
+---
+
+<section id="banner">
+    <div class="homepage-hero-module">
+        <div class="video-container">
+            <div class="filter"></div>
+            <video autoplay loop class="fillWidth">
+                <source src="videos/Love-Coding.mp4" type="video/mp4" />
+                <source src="videos/Love-Coding.webm" type="video/webm" />
+                Tu navegador no maneja la etiqueta "video". Deberías actualizar a una versión más reciente.
+            </video>
+            <div class="poster hidden">
+                <img src="images/Love-Coding.jpg" alt="José González - Data Engineer">
+            </div>
+        </div>
+    </div>
+
+    <div class="inner">
+        <h2>José González</h2>
+        <p>
+            <svg version="1.0" xmlns="http://www.w3.org/2000/svg" width="17px" height="17px" viewBox="0 0 100 100">
+                <polygon points="0 0, 100 0, 100 100, 83 100, 83 36, 66 36, 66 100, 0 100" style="fill:red"/>
+            </svg>
+            Data Engineer
+        </p>
+        <span><a href="https://github.com/ZeegCL"><i class="fab fa-github"></i> github.com/ZeegCL</a></span>
+        <span><a href="https://www.datacrossing.cl"><i class="fas fa-microphone-alt"></i> Podcast</a></span>
+    </div>
+    <a href="#descripcion" class="more scrolly">Ver más</a>
+</section>
+
+<section id="descripcion" class="wrapper alt style2">
+    <section class="spotlight">
+        <div class="image"><img src="images/zeegcl.png" alt="Quién soy" /></div><div class="content">
+            <h2>Acerca de mi</h2>
+            <p>Soy un Ingeniero de Datos de Osorno, Chile.</p>
+            <p>En el pasado me he desempeñado como desarrollador full stack y como administrador de sistemas. 
+                Durante estos 9 años trabajando en TI, me di cuenta de que las empresas no basan el 100% de sus decisiones en datos porque:
+            </p>
+            <ol>
+                <li>No tienen los datos disponibles.</li>
+                <li>No saben cómo utilizar estos datos.</li>
+            </ol>
+            <p>Esto me motivó a enfocarme en las soluciones de gestión de datos e inteligencia de negocios.</p>
+        </div>
+    </section>
+</section>
+
+<section id="servicios" class="wrapper style1">
+    <div class="inner">
+        <header class="major">
+            <h2>Te puedo ayudar en...</h2>
+        </header>
+        <div class="row">
+            <div class="col-4 col-12-small">
+                <h3>Implementación de data pipelines</h3>
+                <p>
+                    Los data pipelines te permiten automatizar la ingesta, limpieza, validación, transformación y almacenamiento de los datos. Desde lectura de archivos en distintos formatos 
+                    hasta el almacenamiento en data warehouses o data lake. Lo importante es que los datos estén disponibles cuando los necesites y como los necesites.
+                </p>
+                <p><b>Tecnologías utilizadas:</b><br>Python, Pandas, Apache Airflow, SQL Server, Postgres.</p>
+            </div>
+            <div class="col-4 col-12-small">
+                <h3>Modelamiento y documentación de datos</h3>
+                <p>
+                    Tus datos deben ser almacenados de una forma eficiente y escalable. El modelo de datos debe estar bien documentado y debe ser entendible por todos quienes lo utilicen. Es
+                    por esto que un buen diseño de tu data warehouse es primordial a la hora de utilizar los datos para obtener información relevante.
+                </p>
+                <p><b>Productos importantes:</b><br>Modelo relacional, data dictionary, data catalog.</p>
+            </div>
+            <div class="col-4 col-12-small">
+                <h3>Creación de dashboard</h3>
+                <p>
+                    Los datos entran por la vista, y para eso necesitas buenas gráficas. Un dashboard debería entregar la mayor cantidad de información sin saturar la pantalla de elementos. 
+                    Realizar el seguimiento a tus indicadores clave de proceso (KPI) puede ser mucho más atractivo que revisar un montón de números en una hoja de Excel.
+                </p>
+                <p><b>Tecnologías utilizadas:</b><br/>PowerBI, Apache Superset, ChartJS</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="proyectos" class="wrapper style2 special">
+    <div class="inner">
+        <header class="major">
+            <h2>Proyectos y Experimentos</h2>
+            <p>Algunas de las cosas que he realizado como hobby, como parte de mis estudios o para probar un concepto/tecnología.</p>
+        </header>
+        <ul class="features">
+            <li>
+                <h3><i class="fab fa-python"></i> LinkedIn Jobs Scrapper</h3>
+                <p>Web scrapper que realiza una búsqueda en las ofertas de trabajo publicadas en LinkedIn y almacena los resultados para posterior análisis.</p>
+                <p><small>Python, Pandas, JSON</small></p>
+                <a href="https://github.com/ZeegCL/linkedin-jobs-scrapper" class="button">Ver</a>
+            </li>
+            <li>
+                <h3><i class="fab fa-js"></i> Generador de sonidos con Fibonacci</h3>
+                <p>Generador de sonidos utilizando la sucesión de Fibonacci.</p>
+                <p><small>Javascript, Tune.js</small></p>
+                <a href="experimentos/fibonacci/index.html" class="button">Ver</a>
+            </li>
+        </ul>
+    </div>
+</section>
+
+<section id="contacto" class="wrapper">
+    <div class="inner">
+        <header>
+            <h2>Hablemos</h2>
+            <p>Cuéntame tus inquietudes y busquemos soluciones.</p>
+        </header>
+        <form method="POST" action="https://formspree.io/hello.zeegcl@gmail.com">
+            <div class="row">
+                <div class="col-12">
+                    <input name="email" placeholder="Tu correo" type="email" required/>
+                </div>
+                <div class="col-12">
+                    <input name="nombre" placeholder="Tu nombre" type="text" required/>
+                </div>
+                <div class="col-12">
+                    <input name="fono" placeholder="Tu número de teléfono (opcional)" type="tel"/>
+                </div>
+                <div class="col-12">
+                    <textarea name="mensaje" placeholder="Tu mensaje" required></textarea>
+                </div>
+                <div class="col-12">
+                    <input type="hidden" name="_subject" value="Contacto desde página web" />
+                    <input type="hidden" name="_language" value="es" />
+                    <input type="text" name="_gotcha" style="display:none" />
+                    <ul class="actions">
+                        <li><button class="primary" type="submit">Enviar</button></li>
+                        <li><button type="reset">Borrar</button></li>
+                    </ul>
+                </div>
+                <div class="col-12">
+                    <small>La información aquí entregada será utilizada única y exclusivamente para establecer un contacto. Los correos
+                        son enviados gracias a los servicios de <a href="https://formspree.io/">Formspree.io</a>.
+                    </small>
+                </div>
+            </div>
+        </form>
+    </div>
+</section>
